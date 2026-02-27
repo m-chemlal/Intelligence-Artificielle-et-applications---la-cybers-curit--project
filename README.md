@@ -45,8 +45,24 @@ Exemples :
 * PortScan
 * Brute Force
 * Botnet
+* Infiltration
+* Web attacks
+
+### 🔹 c) Labels disponibles
+
+* BENIGN
+* Attack types spécifiques
+
+👉 Ici tu fais :
+
+* Statistiques
+* Répartition normal vs attaque
+* Visualisations (si possible)
 
 ---
+
+# 🛡 3️⃣ Partie B – Approche Règles SIEM (Baseline)
+
 Tu dois définir des règles simples .
 
 ## 🔎 Principe
@@ -86,8 +102,23 @@ Si :
 
 * Nombre élevé de connexions courtes
 * Tentatives répétées
+
+Alors → Alerte brute force
+
 ---
+
+### 🔹 Règle 3 – Port Scan
+
+Si :
+
+* Une IP contacte plusieurs ports différents en peu de temps
+
+Alors → Alerte scan
+
 ---
+
+## ❗ Limites à expliquer
+
 * Sensible au seuil choisi
 * Ne détecte pas les nouvelles attaques
 * Beaucoup de faux positifs si mal réglé
@@ -144,44 +175,20 @@ Tu dois comparer :
 
 Très important : expliquer les faux positifs et faux négatifs.
 
-
-## ❗ Limites à expliquer
-
 ---
 
 # 📈 5️⃣ Partie D – Comparaison Finale
 
-
-Alors → Alerte scan
-
-Si :
-
-* Une IP contacte plusieurs ports différents en peu de temps
 C’est la partie la plus importante .
 
 Tu compares :
 
 | Critère             | Règles SIEM    | IA          |
-
-### 🔹 Règle 3 – Port Scan
-
 | ------------------- | -------------- | ----------- |
-
-Alors → Alerte brute force
-
 | Couverture attaques | Limitée        | Large       |
-
-# 🛡 3️⃣ Partie B – Approche Règles SIEM (Baseline)
-
 | Faux positifs       | Souvent élevés | Optimisable |
-* Infiltration
-* Répartition normal vs attaque
-* Visualisations (si possible)
 | Adaptabilité        | Faible         | Forte       |
 | Maintenance         | Manuelle       | Retraining  |
-* Web attacks
-
-* Statistiques
 | Explicabilité       | Très claire    | Moyenne     |
 | Coût                | Faible         | Plus élevé  |
 
@@ -242,16 +249,11 @@ Pourquoi ?
 
 # 🎓 Ce que ton professeur veut vraiment voir
 
-### 🔹 c) Labels disponibles
-
-
 ✔ Compréhension technique
 ✔ Capacité d’analyse critique
 ✔ Vision opérationnelle SOC
 ✔ Argumentation logique
 ✔ Discussion sur risques
-* BENIGN
-
-👉 Ici tu fais :
 
 ---
+ 
